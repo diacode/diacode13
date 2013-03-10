@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %title= content_for?(:title) ? yield(:title) : "Diacode - Handcrafted web development"
+    %meta{:content => content_for?(:description) ? yield(:description) : "Diacode is a Ruby on Rails development boutique. We craft apps for web and mobile with love and passion.", :name => "description"}
+    %meta{:content => "Diacode", :name => "author"}
+
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Pacifico", :media => "all"
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    = render 'shared/analytics'
+
+  %body
+    = render 'shared/header'
+    = yield
+    = render "shared/footer"  
+    
