@@ -2,11 +2,9 @@
 //= require font-awesome
 //= require_tree .
 
-$linkColor: #ff2fa6;
-$gridColumnWidth1200: 60px;
 @import "bootstrap";
 @import "bootstrap-responsive";
-
+@import "variables";
 
 body {
   background: url(bg.jpg);

@@ -1,3 +1,40 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+
+#work{
+  h2 {
+    color: $linkColor;
+  }
+
+  .project{
+    margin-bottom: 30px;
+
+    h2{
+      color: $linkColor;
+    }
+
+    .snapshot{
+      border: 1px solid #ccc;
+    }
+
+    .description{
+      p{
+        text-align: left;
+        font-size: 16px;
+        line-height: 25px;
+      } 
+    }
+
+    .links{
+      text-align: right;
+      margin-top:35px;
+    }
+  }
+
+  .project:first-child{
+    margin-top: 30px;
+  }
+}

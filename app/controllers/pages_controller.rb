@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def services
   end
+
+  def work
+  end
 end
