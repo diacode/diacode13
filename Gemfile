@@ -21,4 +21,5 @@ end
 group :development do
   gem 'thin'
   gem 'capistrano'
+  gem 'quiet_assets'
 end
