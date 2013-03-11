@@ -1,0 +1,47 @@
+#home
+  .row
+    .span10.offset1
+      %h1= image_tag "handcrafted.png", alt: 'Handcrafted Web Development'
+      #hammer.text-center
+        = image_tag "hammer.png"
+
+      %p
+        %strong Diacode is a Ruby on Rails development boutique. 
+        We craft apps for web and mobile with love and passion.
+
+      %p
+        Since 2010 we have been helping individuals and organizations to transform
+        their ideas into top notch applications. We love our work and we commit 
+        ourselves to every line of code we write and every pixel we create.
+
+      %p
+        Our methodology is based on Agile principles where testing, continuous 
+        integration and delivery are essential. We use Ruby on Rails and other 
+        cutting edge technologies to accomplish this. 
+        %br
+        %strong We got the skills to pay the bills.
+  %hr
+  #services.row
+    .span4.text-center
+      .service
+        %i.icon-cogs
+        %h4 DEVELOPMENT
+        %p
+          Crafting new products is our passion. We use the right tools that allow us
+          to deliver high quality applications for mobile and the web.
+    .span4.text-center
+      .service
+        %i.icon-bullhorn
+        %h4 TRAINING
+        %p
+          Formal education is broken. We know that so we try to explore new ways
+          to teach other people and transfer our knowledge.
+    .span4.text-center
+      .service
+        %i.icon-lightbulb
+        %h4 CONSULTING
+        %p
+          If you need help with your project we can team up with you and place your project back in the right track.
+  .row
+    .span12.text-center
+      #call-to-action= link_to "Kickstart your project now", "#", class: 'button'

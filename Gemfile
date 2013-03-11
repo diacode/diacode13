@@ -4,6 +4,7 @@ gem 'rails', '3.2.13.rc1'
 gem 'sqlite3'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
