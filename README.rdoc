@@ -1,2 +1,10 @@
 == Diacode official site for 2013
-  Work in progress
+Made with love in San Francisco, March 2013.
+
+It uses:
+- Rails
+- Twitter Boostrap
+- HAML
+- SCSS
+- font-awesome
+  
