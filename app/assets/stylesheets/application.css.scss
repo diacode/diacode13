@@ -67,7 +67,7 @@ label {
       a { border-bottom: 4px solid #999; }
     }
   }
-  a, a:visited {
+  li a, li a:visited {
     color: #5B5B5B;
     text-decoration: none;
 
@@ -77,7 +77,7 @@ label {
     -o-transition: 0.2s eas
   }
 
-  a:hover {
+  li a:hover {
     border-bottom: 4px solid #999;
   }
 
