@@ -4,9 +4,13 @@
       = link_to image_tag("logo-flat.png"), root_path
     .pull-right
       %ul.inline
-        %li=link_to "HOME", root_path
-        %li=link_to "WORK", work_path
-        %li=link_to "SERVICES", services_path
-        %li=link_to "CONTACT", new_inquiry_path
+        %li{class: ("active" if action_name == 'index')}
+          = link_to "HOME", root_path
+        %li{class: ("active" if action_name == 'work')}
+          = link_to "WORK", work_path
+        %li{class: ("active" if action_name == 'services')}
+          = link_to "SERVICES", services_path
+        %li{class: ("active" if controller_name == 'inquiries')}
+          = link_to "CONTACT", new_inquiry_path
     .clearfix
 = yield :subnav
