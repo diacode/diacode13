@@ -6,8 +6,8 @@ ActionMailer::Base.smtp_settings = {
  :address => 'smtp.gmail.com',
  :port => 587,
  :domain => "diacode.com",
- :user_name => APP_CONFIG['GMAIL_USER'],
- :password => APP_CONFIG['GMAIL_PASSWORD'],
+ :user_name => APP_CONFIG['gmail_user'],
+ :password => APP_CONFIG['gmail_password'],
  :authentication => 'plain'
 }
 
