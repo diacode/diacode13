@@ -1,5 +1,115 @@
-#services
-  %h2.text-center
+- content_for :subnav do
+  %h2#title.text-center
     WE LOVE WHAT WE DO
     %br
     %span SO WE DO IT RIGHT
+
+  #subnav
+    .wrapper{data: {spy: "affix", offset: {top: "236"}, affix: {top: '0'}}}
+      .container
+        %ul.inline.text-center.nav
+          %li 
+            %a{href: "#process"} PROCESS
+          %li 
+            %a{href: "#development"} DEVELOPMENT
+          %li
+            %a{href: "#training"} TRAINING
+          %li
+            %a{href: "#consulting"} CONSULTING
+
+
+#services
+  #process
+    .row
+      .span8.offset2
+        %h3.text-center OUR PROCESS
+        %p
+          During the last years we have been improving our workflow in order to boost productivy and ensure complete success and satisfaction. This how we craft:
+
+    .row
+      .span2.offset2.text-center
+        = image_tag "ico-research.png"
+      .span6
+        %h4 RESEARCH AND BRAINSTORMING
+        %p
+          We start working with you in order to define your product. In addition to analyze what the technical details are, we will help you
+          to improve your product and business model.
+
+    .row
+      .span2.offset2.text-center
+        = image_tag "ico-sketch.png"
+      .span6
+        %h4 WIREFRAMING AND STORYCARDING
+        %p
+          Once we got the idea of your product clear, we'll start wireframing and writing the users stories. Then we'll sort the stories
+          in the order thar uncover more business value to your product.
+
+    .row
+      .span2.offset2.text-center
+        = image_tag "ico-development.png"
+      .span6
+        %h4 DEVELOPMENT AND DELIVERY
+        %p
+          Following a Behavior Driven Development (BDD) approach we'll transform the users stories we wrote into acceptance tests that will
+          guide our development process, ensuring that at any time the software created is bulletproof. In each iteration we'll delivery
+          a fully function version of your product.
+
+  %hr
+  #development
+    .row
+      .span12
+        %h3.text-center DEVELOPMENT
+    #services.row
+      .span5.text-center.offset1
+        .service
+          %i.icon-bolt
+          %h4 KICKSTART
+          %p
+            %strong 3 weeks intensive process where we'll build your Minimum Viable Proudct (MVP)
+            following the Lean Startup principles. We'll start from your product idea and we'll deliver a fully functional app.
+          %p.muted
+            $ 7000 (USD) / week
+      .span5.text-center
+        .service
+          %i.icon-time
+          %h4 HOURLY RATE
+          %p
+            You can also hire us with an hourly base rate per developer. We track our time precisely and only charge for real and valuable work.
+          %p.muted
+            $ 100 (USD) / hour
+    %p.text-center
+      = link_to "Hire us for crafting your product", contact_path, class: 'button'
+
+  %hr
+  #training
+    .row
+      .span12
+        %h3.text-center TRAINING
+    .row
+      .span8.offset2
+        %p 
+          Formal education is broken. We didn't learn our craft in a formal way so we love to explore new ways to teach other people and transfer our knowledge. Often we run free  talks and workshops where we teach Ruby on Rails and other technologies to anyone interested. Here are some of our recents talks
+          %ul.talks
+            %li=link_to "Front-End Frameworks: a quick overview", "http://www.slideshare.net/Diacode/frontend-frameworks-a-quick-overview", target: "_blank"
+            %li=link_to "Education: The Next Big Thing", "http://www.slideshare.net/Diacode/educacin-the-next-big-thing", target: "_blank"
+            %li=link_to "Introduction to HTML5 and CSS3 (Spanish)", "http://talks.diacode.com/html5/index.html", target: "_blank"
+            %li=link_to "Introduction to Ruby on Rails (Spanish): part 1", "http://www.slideshare.net/Diacode/taller-de-introduccin-a-ruby-on-rails", target: "_blank"
+            %li=link_to "Introduction to Ruby on Rails (Spanish): part 2", "http://www.slideshare.net/Diacode/talle-de-introduccin-a-ruby-on-rails-2-parte", target: "_blank"
+        %p You can also hire us for training you in any of our expertise areas.
+        %p.text-center
+          = link_to "Hire us for training", contact_path, class: 'button'
+  %hr
+ 
+  #consulting
+    .row
+      .span12
+        %h3.text-center CONSULTING
+    .row
+      .span8.offset2
+        %p
+          We can team up with you and your team in order to share our know how and give you insights on how to place your project back in the right track
+          using Agile methodologies and Behavior Driven Developmet. In addition we'll assist you on getting more convertions and uncovering more
+          business value.
+        %p.text-center
+          = link_to "Hire us for consulting", contact_path, class: 'button'
+  %hr

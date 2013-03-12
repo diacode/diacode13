@@ -19,6 +19,9 @@
     h2{
       color: $linkColor;
     }
+    h3 {
+      margin-top: 0;
+    }
 
     .snapshot{
       border: 1px solid #ccc;
@@ -34,9 +37,9 @@
 
     .links{
       text-align: right;
-      margin-top:35px;
+      margin-top:10px;
     }
-
+    ul { margin-bottom: 0}
     li {
       margin-bottom: 0px;
       line-height: 22px;

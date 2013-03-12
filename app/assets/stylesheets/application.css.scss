@@ -2,9 +2,10 @@
 //= require font-awesome
 //= require_tree .
 
+@import "variables";
 @import "bootstrap";
 @import "bootstrap-responsive";
-@import "variables";
+
 
 body {
   background: url(bg.jpg);
@@ -21,6 +22,7 @@ a.button, input.button {
   font-size: 18px;
   text-decoration: none;
   border: 0;
+  display: inline-block;
   &:hover {
     background: #F00089;
     text-decoration: none;

@@ -15,7 +15,7 @@
     = csrf_meta_tags
     = render 'shared/analytics'
 
-  %body
+  %body{data: {spy: "scroll", target: "#subnav"}}
     = render 'shared/header'
     .container= yield
     = render "shared/footer"  
