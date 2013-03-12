@@ -1,9 +1,8 @@
 @import "variables";
 #services {
-
+  hr { margin-bottom: 0; margin-top:40px}
   #process {
     .row {
-      margin-top: 20px;
       img {
         margin-top: 10px;
       }
@@ -66,4 +65,8 @@
   .button {
     margin-top: 20px;
   }
+}
+
+#process, #development, #training, #consulting {
+  padding-top: 50px;
 }
