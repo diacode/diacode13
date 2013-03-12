@@ -92,3 +92,19 @@ label {
     text-decoration: underline;
   }
 }
+
+.alert{
+  p:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+.field_with_errors {
+  label{
+    color:#a60000;
+  }
+
+  input[type="text"], input[type="email"], textarea{
+    border-color: #a60000;
+  }
+}

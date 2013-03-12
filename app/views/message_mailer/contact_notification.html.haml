@@ -1,0 +1,16 @@
+%p 
+  #{@inquiry.name} interesado en #{@inquiry.interested_in} envió una solicitud de contacto a Diacode con el siguiente mensaje:
+
+%p= @inquiry.message
+
+%h5 Datos de contacto:
+
+%ul
+  %li
+    %strong Email: 
+    = @inquiry.email
+
+  - if !@inquiry.phone.blank?
+    %li
+      %strong Phone: 
+      = @inquiry.phone
