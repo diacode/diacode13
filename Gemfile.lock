@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/teohm/capistrano-shared_file.git
+  revision: a9e821bad189f494445706c045d92c47bed6eb6a
+  specs:
+    capistrano-shared_file (0.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -146,6 +152,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   capistrano
+  capistrano-shared_file!
   coffee-rails (~> 3.2.1)
   exception_notification (= 2.6.1)
   font-awesome-rails

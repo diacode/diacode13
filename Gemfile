@@ -21,5 +21,6 @@ end
 group :development do
   gem 'thin'
   gem 'capistrano'
+  gem 'capistrano-shared_file', git: 'https://github.com/teohm/capistrano-shared_file.git'
   gem 'quiet_assets'
 end

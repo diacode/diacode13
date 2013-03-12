@@ -1,0 +1,15 @@
+defaults: &defaults
+  gmail_username: CHANGE_ME
+  gmail_password: CHANGE_ME
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
